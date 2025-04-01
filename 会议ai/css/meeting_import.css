@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0a0a; /* 深色背景 */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #00e6ff; /* 霓虹蓝色文字 */
+}
+
+/* 标题样式 */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+    margin-bottom: 30px; /* 与上传容器的间距 */
+}
+
+/* 上传容器 */
+.upload-container {
+    width: 500px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明黑色背景 */
+    border: 2px dashed #00e6ff; /* 霓虹蓝色虚线边框 */
+    border-radius: 20px; /* 圆角 */
+    box-shadow: 0 0 20px rgba(0, 230, 255, 0.5), 0 0 40px rgba(0, 230, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* 内部元素间距 */
+}
+
+/* 上传区域 */
+.upload-area {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #00e6ff;
+    border-radius: 10px;
+    background-color: rgba(0, 230, 255, 0.1); /* 半透明背景 */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: rgba(0, 230, 255, 0.2); /* 悬浮时背景变亮 */
+}
+
+.upload-area.dragover {
+    background-color: rgba(0, 230, 255, 0.3); /* 拖拽时背景变亮 */
+}
+
+/* 上传按钮 */
+.upload-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #00e6ff;
+    background-color: transparent;
+    border: 2px solid #00e6ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #00e6ff;
+    color: #0a0a0a;
+    box-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+}
+
+/* 文件信息 */
+.file-info {
+    font-size: 14px;
+    color: #00e6ff;
+    text-shadow: 0 0 5px #00e6ff;
+}
+/* 版权信息 */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    color: #00e6ff;
+    text-shadow: 0 0 5px #00e6ff;
+    text-align: center;
+    white-space: nowrap; /* 防止换行 */
+}
