@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西湖论剑大会AI+会议助手智能体应用开发AI对话界面</title>
+    <link rel="stylesheet" href="css/ai.css"/>
+</head>
+<body>
+
+<!-- 标题 -->
+<div class="title">
+    AI 对话助手
+</div>
+
+<!-- 对话容器 -->
+<div class="chat-container">
+    <!-- 对话区域 -->
+    <div class="chat-area" id="chatArea">
+        <!-- 示例消息 -->
+        <div class="message ai-message">
+            您好！我是 AI 助手，请问有什么可以帮您？
+        </div>
+
+    </div>
+
+
+    <div id="loadingIndicator" style="display: none; "></div>
+
+
+    <!-- 输入框和发送按钮 -->
+    <div class="input-container">
+        <input type="text" id="userInput" placeholder="输入消息...">
+        <button id="sendButton">发送</button>
+        <!-- 加载提示 -->
+
+    </div>
+
+    <!-- 新增的错误提示元素 -->
+    <div id="errorMessage" style="display: none; color: red;">
+        服务器出错，请换个问题或稍后再试~
+    </div>
+</div>
+<!-- 版权信息 -->
+<div class="footer">
+    队伍名称：发际线安保队 | 队长： 王泽宇 | 队员： 张奕凡 | 队员: 王明聪 | 吉祥物画师：江雪长情
+</div>
+<script src="js/ai.js"></script>
+</body>
+</html>
